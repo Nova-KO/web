@@ -1,98 +1,43 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 .calculator {
-  width: 300px;
-  margin: 50px auto;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.result {
-  padding: 10px;
-  text-align: right;
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
 }
 
-.result input[type="text"] {
-  width: 100%;
-  height: 50px;
-  border: none;
-  background-color: #f0f0f0;
-  font-size: 2rem;
-  text-align: right;
-  padding-right: 10px;
+#btn {
+    background-color: #fb0066;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
 }
 
-.number,
-.operator {
-  width: 25%;
-  height: 50px;
-  border: none;
-  background-color: #f0f0f0;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.number:hover,
-.operator:hover {
-  background-color: #ccc;
-}
-
-.operator {
-  color: #fff;
-  background-color: #ff9a00;
-}
-
-.operator#clear {
-  background-color: #ff0000;
-}
-
-.operator#equals {
-  background-color: #009900;
-}
-
-.number#zero {
-  width: 50%;
-}
-
-.number#decimal {
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 500px) {
-  .calculator {
-    width: 100%;
-  }
-
-  .number,
-  .operator {
-    width: 20%;
-    height: 40px;
-    font-size: 1.2rem;
-  }
-
-  .number#zero {
-    width: 40%;
-  }
-
-  .result input[type="text"] {
-    height: 40px;
-    font-size: 1.5rem;
-  }
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
 }
